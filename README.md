@@ -3,16 +3,6 @@ Welcome to the Cortis Fanbase Website — a multi‑page fan community project b
 
 ---
 
-## 🎮 Features
-- **Keyboard controls** (⬅️ ⬆️ ⬇️ ➡️) for smooth movement.
-- **On-screen buttons** for mobile/touch users.
-- **Procedural maze generation** using Depth-First Search (DFS).
-- **Extra paths/loops** for multiple solutions.
-- **Level progression** with increasing difficulty.
-- **Overlay feedback** when a level is completed.
-
----
-
 ## 🚀 Getting Started
 1. Clone or download this repository.
 2. Open `index.html` in your browser.
@@ -38,13 +28,14 @@ For major changes, please open an issue first to discuss what you’d like to im
 
 ---
 
+## 📜 License
+This project is for personal/educational use only.
+
+---
+
 ## 🧑‍💻 Author
 ---
     Auther Name:     Trupti Y. Sabale  
     Created:         24-Jun-2026
     Updated:         -
 
----
-
-## 📜 License
-This project is for personal/educational use only.
