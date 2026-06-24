@@ -55,8 +55,8 @@ The Cortis Fanbase Website is a **responsive, multimedia fan hub** featuring:
 Clone the repository and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/yourusername/cortis-fanbase.git
-cd cortis-fanbase
+git clone https://github.com/ChiFrontEnd/Fanbase_Webpage.git
+cd Fanbase_Webpage
 ```
 ---
 
