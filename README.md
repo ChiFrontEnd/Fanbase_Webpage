@@ -60,7 +60,8 @@ cd cortis-fanbase
 ```
 ---
 
-## Project Structure
+## 📂 Project Structure
+```text
 cortis-fanbase/
 │
 ├── index.html        # Main webpage
@@ -72,6 +73,22 @@ cortis-fanbase/
 │   ├── Gallery/
 │   └── Videos/
 └── README.md         # Documentation
+```
+---
+
+## 🤝 Contributing
+Pull requests are welcome!  
+For major changes, please open an issue first to discuss what you’d like to improve.  
 
 ---
 
+## 🧑‍💻 Author
+---
+    Auther Name:     Trupti Y. Sabale  
+    Created:         24-Jun-2026
+    Updated:         24-Jun-2026
+
+---
+
+## 📜 License
+This project is for personal/educational use only.
