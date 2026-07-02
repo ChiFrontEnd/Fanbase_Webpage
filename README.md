@@ -97,3 +97,12 @@ For major changes, please open an issue first to discuss what you’d like to im
 
 ## 📜 License
 This project is for personal/educational use only.
+
+---
+
+## All the best! 🥇
+<p align="left">
+  <img src="https://img.shields.io/badge/BUILT_WITH-000000?style=for-the-badge&logoColor=white" height="60">
+  <img src="https://img.shields.io/badge/❤-000000?style=for-the-badge&logoColor=white" height="60">
+</p>
+
