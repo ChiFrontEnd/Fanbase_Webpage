@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Inspired Pasta Recipes</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- Floating circles -->
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+
+    <!-- Navbar -->
+<nav>
+    <div class="logo" id="homeLogo" style="cursor: pointer;">
+        <i class="fa-solid fa-utensils"></i>
+        <span>The Purple Kitchen</span>
+    </div>
+    
+    <div style="display: flex; gap: 15px; align-items: center;">
+        <button id="homeBtn" class="explore-btn" style="padding: 8px 16px; font-size: 14px; display: none;">🏠 Home</button>
+        <button id="themeToggle">🌙 Dark</button>
+    </div>
+</nav>
+
+    <!-- Hero Section (Added id="hero" to match JS) -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>
+                Inspired by <span>Weverse</span><br>
+                Cooking Lives 💜
+            </h1>
+            <p>
+                A beautiful fan-inspired recipe page featuring comforting pasta recipes,
+                designed with a modern glassmorphism interface.
+            </p>
+            <button id="exploreBtn" class="explore-btn">
+                Explore Recipes
+            </button>
+        </div>
+    </section>
+
+<section id="recipeBook">
+    <!-- Recipes yahan JavaScript ke zariye dynamically insert hongi -->
+    <div id="recipeContainer"></div>
+</section>
+
+    <!-- JS -->
+    <script src="Recipe.js"></script>
+    <script src="Script.js"></script>
+</body>
+
+</html>
