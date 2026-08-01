@@ -1,4 +1,4 @@
-# Calender
+## BTS Fanbase Calender
 A modern, classy, and timeless **fan-made BTS Calendar** built with **HTML, CSS, and JavaScript**.  
 This interactive calendar highlights BTS member birthdays, anniversaries, and special events with a clean UI and playful design.
 
