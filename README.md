@@ -11,9 +11,9 @@ cd Fanbase_Webpage
 ```text
 Fanbase_Webpage/
 │
-├── Images/           # BTS Fanbase Calendar
-├── Images/           # Cortis Fanbase Webpage
-└── README.md         # Documentation
+├── BTS_Fanbase_Calendar/             # BTS Fanbase Calendar
+├── Cortis_Fanbase_Webpage/           # Cortis Fanbase Webpage
+└── README.md                         # Documentation
 ```
 ---
 
