@@ -1,6 +1,6 @@
 ## Fanbase Webpages - K-Pop Fan Projects Collection
 ## 📌 Overview
-A professional showcase of interactive, browser-based projects built for K-Pop fans. This repository features creative web applications, UI experiments, and fan-centric projects—starting with the **BTS Calendar** and **Cortis Fanbase Webpage**—emphasizing clean code, user interaction, and modern web practices.
+A professional showcase of interactive, browser-based projects built for K-Pop fans. This repository features creative web applications, UI experiments, and fan-centric projects.
 
 ---
 
@@ -16,6 +16,7 @@ Clone the repository and open `index.html` in your browser:
 
 ```bash
 git clone [https://github.com/ChiFrontEnd/Fanbase_Webpage.git](https://github.com/ChiFrontEnd/Fanbase_Webpage.git)
+
 cd Fanbase_Webpage
 ```
 ---
