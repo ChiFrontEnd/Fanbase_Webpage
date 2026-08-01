@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BTS Calendar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="https://img.icons8.com/officel/80/bts-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <header>
+    <h1>BTS Calendar</h1>
+    <p>Modern • Classy • Timeless</p>
+    <div class="header-actions">
+      <button id="themeToggle" class="btn">🌙 Dark</button>
+      <button onclick="window.print()" class="btn secondary">🖨 Print</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="calendar-controls">
+      <div class="nav">
+        <button id="prev" class="btn">&#10094;</button>
+        <button id="next" class="btn">&#10095;</button>
+      </div>
+      <h2 id="monthYear" aria-live="polite">
+        <div>
+            <select id="monthSelect"></select>
+            <select id="yearSelect"></select>
+        </div>
+      </h2>
+    </div>
+
+    <div class="legend">
+      <span class="swatch"></span>
+      <span>Birthday</span>
+    </div>
+
+    <div class="calendar" id="calendar">
+      <div class="day-name">Sun</div>
+      <div class="day-name">Mon</div>
+      <div class="day-name">Tue</div>
+      <div class="day-name">Wed</div>
+      <div class="day-name">Thu</div>
+      <div class="day-name">Fri</div>
+      <div class="day-name">Sat</div>
+    </div>
+
+    <section class="selected-date">
+        <h3>Selected Date</h3>
+        <p id="dateDetails">Click on a date to see details here.</p>
+    </section>
+
+    <section class="birthdays">
+      <h3>BTS Member Birthdays</h3>
+      <ul id="birthdayList">
+        <!-- Populated dynamically for the current month -->
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Fan-made BTS Calendar • © 2025</p>
+  </footer>
+
+  <script src="Script.js"></script>
+  </body>
+  </html>
