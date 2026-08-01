@@ -1,0 +1,318 @@
+    :root {
+      --bg: #f6f6f8;
+      --text: #2b2b35;
+      --card: #ffffff;
+      --muted: #8a8a98;
+      --accent: #7b5cff;
+      --accent-2: #ff6fb5;
+      --header-bg: #2b2b35;
+      --header-text: #ffffff;
+      --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      --grid-border: #ececf1;
+      --dayname-bg: rgba(0, 0, 0, 0.05);
+      --birthday-bg: rgba(255, 111, 181, 0.18);
+      --today-ring: 2px solid var(--accent);
+    }
+
+    body.dark {
+      --bg: #0f1115;
+      --text: #eaeaf2;
+      --card: #151821;
+      --muted: #a9a9b8;
+      --accent: #9a84ff;
+      --accent-2: #ff8fc9;
+      --header-bg: #0d0f14;
+      --header-text: #eaeaf2;
+      --shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+      --grid-border: #23283a;
+      --dayname-bg: rgba(255, 255, 255, 0.06);
+      --birthday-bg: rgba(255, 143, 201, 0.22);
+    }
+
+    body.dark header,
+    body.dark footer {
+      background: rgba(255,255,255,0.08);
+
+    }
+
+
+    * {
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--header-bg);
+      color: var(--header-text);
+      top: 0;
+      z-index: 10;
+      box-shadow: var(--shadow);
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      opacity: 0.85;
+      margin-top: 6px;
+    }
+
+    .header-actions {
+      margin-top: 1rem;
+      display: inline-flex;
+      gap: 10px;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.12s ease, background 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 6px 14px rgba(123, 92, 255, 0.25);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 18px rgba(123, 92, 255, 0.35);
+    }
+
+    .btn:focus {
+    outline: 3px solid var(--accent-2);
+    outline-offset: 2px;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--header-text);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: none;
+    }
+
+    main {
+      max-width: 980px;
+      margin: auto;
+      padding: 1.5rem;
+    }
+
+    .calendar-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      gap: 10px;
+    }
+
+    .calendar-controls h2 {
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .calendar-controls .nav {
+      display: inline-flex;
+      gap: 8px;
+    }
+
+    .calendar-controls .nav .btn {
+      padding: 8px 12px;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      background: var(--card);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--grid-border);
+    }
+
+    .day-name {
+      background: var(--dayname-bg);
+      padding: 12px;
+      text-align: center;
+      font-weight: 600;
+      color: var(--text);
+      border-bottom: 1px solid var(--grid-border);
+    }
+
+    .day {
+      padding: 14px;
+      text-align: right;
+      min-height: 92px;
+      border-bottom: 1px solid var(--grid-border);
+      border-right: 1px solid var(--grid-border);
+      position: relative;
+      transition: background 0.2s ease, transform 0.08s ease;
+    }
+
+    .day:hover {
+      background: rgba(0, 0, 0, 0.03);
+    }
+
+    .day:nth-child(7n) {
+      border-right: none;
+    }
+
+    .day .num {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .day .tags {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: flex-start;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--birthday-bg);
+      color: var(--text);
+      border: 1px dashed var(--accent-2);
+    }
+
+    .today {
+      outline: var(--today-ring);
+      outline-offset: -2px;
+      border-radius: 8px;
+      background: rgba(123, 92, 255, 0.12);
+    }
+
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 12px 0 18px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .legend .swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 4px;
+      background: var(--birthday-bg);
+      border: 1px dashed var(--accent-2);
+    }
+
+    .selected-date {
+        margin-top: 2rem;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        background: var(--card);
+        border: 1px solid var(--grid-border);
+        }
+
+    .selected-date h3 {
+        margin-top: 0;
+    }
+
+    #dateDetails {
+        font-weight: 500;
+        color: var(--text);
+    }
+
+    .birthdays {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      background: var(--card);
+      border: 1px solid var(--grid-border);
+    }
+
+    .icon-line {
+      border-left: 4px solid;
+      padding-left: 6px;
+      margin-right: 6px;
+    }
+
+    /* Different colors per event type */
+    .birthday-line { border-color: var(--accent); }   /* pink */
+    .anniversary-line { border-color: #ffd86b; } /* yellow */
+    .event-line { border-color: #4dabf7; }      /* blue */
+
+    .birthdays h3 {
+      margin-top: 0;
+    }
+
+    .birthdays ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 8px 16px;
+    }
+
+    .birthdays li {
+      padding: 6px 0;
+      color: var(--text);
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      background: var(--header-bg);
+      color: var(--header-text);
+    }
+
+    /* Mobile-first */
+    @media (max-width: 640px) {
+      .day {
+        min-height: 72px;
+        font-size: 0.85rem;
+      }
+      .day .tags {
+        bottom: 8px;
+      }
+    }
+
+    /* Printable version */
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+      header,
+      .header-actions,
+      .legend,
+      footer {
+        display: none;
+      }
+      .calendar {
+        box-shadow: none;
+        border: 1px solid #ccc;
+      }
+    }
